@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { Client, TeamMember, Activity, Goal, ResourceGap } from '../types';
+import type { Client, TeamMember, Activity, Goal, ResourceGap } from '../types';
 import { mockClients, mockTeamMembers, mockActivities, mockGoals, mockResourceGaps } from '../data/mockData';
 
 interface StoreState {

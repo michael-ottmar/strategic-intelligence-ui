@@ -1,8 +1,9 @@
 import React from 'react';
 import { PageHeader } from '../components/layout/PageHeader';
-import { DataTable, Column } from '../components/shared/DataTable';
+import { DataTable } from '../components/shared/DataTable';
+import type { Column } from '../components/shared/DataTable';
 import { useStore } from '../store/useStore';
-import { Problem, Client } from '../types';
+import type { Problem } from '../types';
 import { Plus, Download, Filter, AlertTriangle, CheckCircle, Clock } from 'lucide-react';
 
 interface ProblemRow extends Problem {
@@ -172,7 +173,7 @@ export const ProblemsMatrix: React.FC = () => {
         data={filteredProblems}
         columns={columns}
         onRowClick={setSelectedProblem}
-        selectedRow={selectedProblem}
+        selectedRow={selectedProblem || undefined}
         emptyMessage="No problems found matching the selected filters"
       />
 

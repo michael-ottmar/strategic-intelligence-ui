@@ -2,7 +2,6 @@ import React from 'react';
 import { useStore } from '../../store/useStore';
 import { 
   Mail, 
-  Phone, 
   Calendar, 
   DollarSign, 
   Building, 

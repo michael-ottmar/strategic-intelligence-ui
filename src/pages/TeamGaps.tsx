@@ -1,12 +1,11 @@
 import React from 'react';
 import { PageHeader } from '../components/layout/PageHeader';
 import { useStore } from '../store/useStore';
-import { UserPlus, FileText, AlertCircle, TrendingUp, Users } from 'lucide-react';
+import { UserPlus, FileText, TrendingUp, Users } from 'lucide-react';
 
 export const TeamGaps: React.FC = () => {
   const { teamMembers, resourceGaps } = useStore();
 
-  const skillCategories = ['Technical', 'Soft Skills', 'Management', 'Analysis', 'Security', 'Cloud', 'Design', 'Product'];
   
   const skillMatrix = React.useMemo(() => {
     const matrix: Record<string, Record<string, string>> = {};

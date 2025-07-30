@@ -1,6 +1,5 @@
-import { Client, TeamMember, ValueMetric, Activity, Goal, ResourceGap, Problem, Solution } from '../types';
+import type { Client, TeamMember, ValueMetric, Activity, Goal, ResourceGap, Problem } from '../types';
 
-const industries = ['Technology', 'Healthcare', 'Finance', 'Retail', 'Manufacturing', 'Energy', 'Education'];
 const problemCategories = ['technical', 'process', 'strategic', 'operational', 'financial'] as const;
 
 function generateProblems(clientId: string, count: number): Problem[] {

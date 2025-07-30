@@ -1,5 +1,5 @@
 import React from 'react';
-import { Client } from '../../../types';
+import type { Client } from '../../../types';
 import { useStore } from '../../../store/useStore';
 
 interface ClientFormProps {

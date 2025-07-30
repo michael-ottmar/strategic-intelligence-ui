@@ -7,13 +7,12 @@ import {
   DollarSign, 
   Users,
   ArrowRight,
-  Filter,
   Star
 } from 'lucide-react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, FunnelChart, Funnel, LabelList } from 'recharts';
 
 export const GrowthStrategy: React.FC = () => {
-  const { goals, clients } = useStore();
+  const { goals } = useStore();
 
   const pipelineData = [
     { name: 'Leads', value: 125, fill: '#3B82F6' },
